@@ -1,0 +1,70 @@
+body{
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+table {
+    width: 1000px;
+    border: 1px black solid;
+}
+.header-content{
+    font-size: 35px;
+}
+table.table {
+    border-collapse: separate;
+    border-color: black;
+    border-radius: .25rem;
+    min-width: 100px;
+    margin-bottom: 1rem;
+}
+
+table.table-bordered {
+    border: 2px solid black;
+}
+
+table.table-active {
+    background-color: #000000;
+}
+
+table.table-warning {
+    background-color: #000000;
+}
+
+table.table-light {
+    background-color: #000000;
+}
+
+table.table th,
+table.table td {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid black;
+}
+
+table.table th {
+    font-weight: 600;
+}
+
+table.table tr.process th {
+    border: 1px black solid;
+    height: 100px;
+}
+
+table.table td.left {
+    width: 50px;
+}
+
+table.table td.right {
+    width: 250px;
+}
+
+table.table td.footer {
+    background-color: #000000;
+    height: 10px;
+}
+.footer > td{
+    background-color: rgb(229,229,229);
+}
+
+table.table td.footer div {
+    text-align: left;
+    font-size: 20px;
+}
