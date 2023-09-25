@@ -1,0 +1,48 @@
+.container {
+  width: 1200px;
+  margin: auto;
+
+  border: 1px black solid;
+}
+
+.container header {
+  height: 70px;
+  font-family: "Cascadia Mono";
+  border: 1px black solid;
+  text-align: center;
+}
+
+.container nav {
+  height: 40px;
+  border: 1px black solid;
+  font-family: "Cascadia Mono";
+  text-align: center;
+}
+
+.container .content {
+  overflow: auto;
+}
+.content .left {
+  width: 30%;
+  height: 100px;
+  border: 1px black solid;
+  font-family: "Cascadia Mono";
+  float: left;
+  text-align: center;
+}
+
+.content .right {
+  text-align: center;
+  float: right;
+  width: 69.667%;
+  height: 100px;
+  border: 1px black solid;
+  font-family: "Cascadia Mono";
+}
+
+.container footer {
+  height: 87px;
+  border: 1px black solid;
+  font-family: "Cascadia Mono";
+  text-align: center;
+}
