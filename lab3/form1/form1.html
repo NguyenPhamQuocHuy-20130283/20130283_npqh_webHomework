@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <form action="">
+    <h1>Contact us</h1>
+    <div class="input-group">
+
+      <input type="text" id="fname" name="full-name" placeholder="Enter Your Name">
+      <label for="fname">full name*</label>
+    </div>
+    <div class="row">
+      <div class="input-group">
+
+        <input type="text" id="email" name="email" placeholder="Enter Your Email">
+        <label for="email">email*</label>
+
+      </div>
+      <div class="input-group">
+
+        <input type="number" id="phone" name="phone" placeholder="Enter Your Phone">
+        <label for="phone">phone*</label>
+      </div>
+    </div>
+    <div class="input-group">
+      <select id="services" name="services">
+        <option value="default">Please choose</option>
+        <option value="australia">Fast</option>
+        <option value="canada">Normal</option>
+        <option value="usa">Ultra Fast</option>
+      </select>
+      <label for="services" >Need services*</label>
+    </div>
+    <div class="input-group">
+      <textarea name="" id="message" rows="10" placeholder="Your message here..." style="padding-top:20px"></textarea>
+      <label for="message">message</label>
+    </div>
+    <input type="submit" value="Submit &#8594" name="submit">
+  </form>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
