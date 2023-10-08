@@ -1,29 +1,35 @@
 const main = document.querySelector("main");
 const body = document.querySelector("body");
-const colors = [
-  "#ff8c00",
-  "#4caf50",
-  "#ffeb3b",
-  "#795548",
-  "#607d8b",
-  "#e91e63",
-  "#8bc34a",
-  "#9e9e9e",
-];
 
-// Create buttons with colors and append them to the main element
-colors.forEach((color) => {
+// Function to generate an array of random colors
+function generateRandomColors(numColors) {
+  const randomColors = [];
+  for (let i = 0; i < numColors; i++) {
+    const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    randomColors.push(randomColor);
+  }
+  return randomColors;
+}
+
+// Generate an array of 100 random colors
+const allColors = generateRandomColors(100);
+
+// Pick 8 random colors from the array
+const selectedColors = allColors.slice(0, 8);
+
+selectedColors.forEach((color) => {
   const button = document.createElement("button");
-  button.setAttribute("data-button-thing", color);
+  button.setAttribute("data-button-color", color);
   button.textContent = `Color ${color}`;
   button.style.backgroundColor = color;
   button.classList.add("btn");
   main.insertAdjacentElement("beforeend", button);
 });
 
-// Change the body's background color when a button is clicked
-body.addEventListener("click", function (event) {
-  const target = event.target;
-  if (target?.classList.contains("btn"))
-    this.style.backgroundColor = target.dataset.buttonThing;
+body.addEventListener("click", function (e) {
+  const eTarget = e.target;
+  if (eTarget?.classList.contains("btn")) {
+    const buttonColor = eTarget.getAttribute("data-button-color");
+    this.style.backgroundColor = buttonColor;
+  }
 });
