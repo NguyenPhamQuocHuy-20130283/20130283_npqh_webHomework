@@ -14,37 +14,42 @@
     <div class="input-group">
 
       <input type="text" id="fname" name="full-name" placeholder="Enter Your Name">
+      <span id="fname-error" style="color: red;"></span>
       <label for="fname">full name*</label>
     </div>
     <div class="row">
       <div class="input-group">
 
         <input type="text" id="email" name="email" placeholder="Enter Your Email">
+        <span id="email-error" style="color: red;"></span>
         <label for="email">email*</label>
 
       </div>
       <div class="input-group">
 
         <input type="number" id="phone" name="phone" placeholder="Enter Your Phone">
+        <span id="phone-error" style="color: red;"></span>
         <label for="phone">phone*</label>
       </div>
     </div>
     <div class="input-group">
       <select id="services" name="services">
-        <option value="default">Please choose</option>
+        <option value="default">Normal</option>
         <option value="australia">Fast</option>
-        <option value="canada">Normal</option>
+        <option value="canada">Slow</option>
         <option value="usa">Ultra Fast</option>
       </select>
       <label for="services" >Need services*</label>
     </div>
     <div class="input-group">
       <textarea name="" id="message" rows="10" placeholder="Your message here..." style="padding-top:20px"></textarea>
+      <span id="message-error" style="color: red;"></span>
       <label for="message">message</label>
     </div>
     <input type="submit" value="Submit &#8594" name="submit">
   </form>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
