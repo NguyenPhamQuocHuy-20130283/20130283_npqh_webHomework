@@ -29,8 +29,8 @@ function solve() {
   } else {
     const S1 = (-b - Math.sqrt(D)) / (2 * a),
       S2 = (-b + Math.sqrt(D)) / (2 * a);
-    s1.innerHTML = S1.toString();
-    s2.innerHTML = S2.toString();
+    s1.innerHTML = "S1: " + S1.toString();
+    s2.innerHTML = "S2: " + S2.toString();
   }
 }
 

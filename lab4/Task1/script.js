@@ -28,7 +28,7 @@ selectedColors.forEach((color) => {
 
 body.addEventListener("click", function (e) {
   const eTarget = e.target;
-  if (eTarget?.classList.contains("btn")) {
+  if (eTarget.classList.contains("btn")) {
     const buttonColor = eTarget.getAttribute("data-button-color");
     this.style.backgroundColor = buttonColor;
   }

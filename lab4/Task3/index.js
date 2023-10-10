@@ -18,7 +18,5 @@ function getRandomNumber(min, max) {
   let result = Math.floor(step2) + min;
   return result;
 }
-btnRandom.addEventListener("click", () => {
-  let index = getRandomNumber(0, users.length - 1);
-  result.innerText = users[index];
-});
+let index = getRandomNumber(0, users.length - 1);
+result.innerHTML = users[index];
